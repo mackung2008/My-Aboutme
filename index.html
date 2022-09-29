@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ABOUT ME - MAC</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="icon" href="https://media.discordapp.net/attachments/970498418407526490/1021220672350998549/favicon.ico">
+  <meta content="Mac's about me" property="og:title" />
+  <meta content="Who asking?" property="og:description" />
+  <meta content="url" property="og:url" />
+  <meta content="https://media.discordapp.net/attachments/970498418407526490/1021225704345579651/deadserver.gif" property="og:image" />
+  <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+  <style>
+    body {
+      font-family: 'Ubuntu';
+      font-size: 19px;
+    }
+
+
+    body {
+      color: #222;
+      font: 100% system-ui;
+    }
+
+    a {
+      color: #0033cc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: #eee;
+        background: #121212;
+      }
+
+      body a {
+        color: #809fff;
+      }
+    }
+
+
+    #footer {
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      background-color: None;
+      padding: 3px;
+      text-align: center;
+      width: 100%;
+      color: mediumpurple;
+    }
+
+    html {
+      background: #fff url('https://media.discordapp.net/attachments/970498418407526490/1024959677643112498/Ahhhhh_Millions_of_stars_are_orbiting_the_earth._100bb749-7675-4142-8968-959103612dda.png') fixed no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    body {
+      padding: 10vh 10vw;
+      border-radius: 20px;
+      backdrop-filter: blur(200px) brightness(190%);
+    }
+
+
+
+    /*
+  Attachments:
+
+https://media.discordapp.net/attachments/970498418407526490/1021225704345579651/deadserver.gif
+*/
+  </style>
+</head>
+
+<body>
+  <center>
+    <details>
+
+      <summary>Click here for information</summary>
+      <p style="color:blue;">
+        hello my name is mac</br>
+        birthday at 3 April 2008 15:00 GMT+7</br>
+        my mbti is enfp</br>
+        </br>
+        more soon I'll add in later.....
+    </details>
+    </p>
+    </br>
+    <details>
+      <summary>Soical</summary>
+      <p style="color:green;">
+        <a href="https://discord.com/users/829156179803504670">my discord profile(click this)</a></br>
+      </p>
+    </details>
+  </center>
+
+</body>
+<script>
+  let g = "gaysex you";
+  let useragent = navigator.userAgent;
+  console.warn(useragent);
+  var timerVar = setInterval(countTimer, 1000);
+  var totalSeconds = 0;
+
+  function countTimer() {
+    ++totalSeconds;
+    var hour = Math.floor(totalSeconds / 3600);
+    var minute = Math.floor((totalSeconds - hour * 3600) / 60);
+    var seconds = totalSeconds - (hour * 3600 + minute * 60);
+    if (hour < 10)
+      hour = "0" + hour;
+    if (minute < 10)
+      minute = "0" + minute;
+    if (seconds < 10)
+      seconds = "0" + seconds;
+    document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+  }
+  window.onload = function tomorrow() {
+    var date_now = new Date().toISOString();
+    document.getElementById("dn").innerHTML = date_now
+  }
+
+  function sendMessage() {
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1024360799722016858/835tgGjirIcRunOa2FzPdgCSX0IQ2c-i_jOMQSMXEdByheGZYARisO9vL4VvEYnWvbSD");
+    let test = "test message";
+    let timeiso = new Date().toISOString();
+    const params = {
+      "content": "test",
+      "username": "Weblog system",
+      "embeds": [
+        {
+          "title": "WebLog",
+          "description": useragent,
+          "fields": [
+            {
+              "name": "INFO",
+              "value": "None",
+              "inline": false
+                },
+            {
+              "name": "Time",
+              "value": timeiso,
+              "inline": false
+                }
+            ],
+          "timestamp": timeiso
+        }]
+    };
+    request.setRequestHeader('Content-type', 'application/json');
+    request.send(JSON.stringify(params));
+  }
+
+
+  try {
+    sendMessage();
+  }
+  catch (err) {
+    console.warn(err.message);
+    console.log("Dammm");
+  }
+</script>
+<div id="footer">Under MIT license
+  <div id="timer"></div>
+  <div id="dn"></div>
+
+</div>
