@@ -15,8 +15,9 @@
   <meta content="url" property="og:url" />
   <meta content="https://media.discordapp.net/attachments/970498418407526490/1021225704345579651/deadserver.gif" property="og:image" />
   <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+  <script href="config.js"></script>
   <style>
-    body {
+    ubntu {
       font-family: 'Ubuntu';
       font-size: 19px;
     }
@@ -34,7 +35,7 @@
     @media (prefers-color-scheme: dark) {
       body {
         color: #eee;
-        background: #121212;
+        background: #ffffff;
       }
 
       body a {
@@ -42,6 +43,11 @@
       }
     }
 
+    footer {
+      height: 4pt;
+      text-align: right;
+      bottom: 0;
+    }
 
     #footer {
       position: fixed;
@@ -52,6 +58,7 @@
       text-align: center;
       width: 100%;
       color: mediumpurple;
+      border-color: #dac1e3;
     }
 
     html {
@@ -69,38 +76,81 @@
       backdrop-filter: blur(200px) brightness(190%);
     }
 
+    summary {
+      color: #e53beb;
+      background: #ffffff;
 
+    }
 
-    /*
-  Attachments:
+    details {
+      color: #3bebc4;
+    }
 
-https://media.discordapp.net/attachments/970498418407526490/1021225704345579651/deadserver.gif
-*/
+    img {
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-position: center;
+      object-fit: cover;
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+    }
+    #textzone {
+   white-space: pre;
+ }
+        
+      
+
   </style>
 </head>
 
 <body>
   <center>
+    <ubntu>
+      <h3>Welcome</h3>
+    </ubntu>
+  </center>
+  <a href="https://discord.com/users/829156179803504670">
+    <img src="https://cdn.discordapp.com/avatars/829156179803504670/1d3717fdd996acec26edd4536bd4b24f.webp?size=2048" /></br>
+  </a>
+
+  <center>
+
+    <ubntu>
+      <h2>Andromeda#2770</h2>
+    </ubntu>
+
+
     <details>
 
-      <summary>Click here for information</summary>
-      <p style="color:blue;">
-        hello my name is mac</br>
-        birthday at 3 April 2008 15:00 GMT+7</br>
-        my mbti is enfp</br>
-        </br>
-        more soon I'll add in later.....
+      <summary>
+        <ubntu>Click here for information</ubntu>
+      </summary><div class="textzone">
+      hello my name is mac
+birthday <time>at 3 April 2008 15:00 GMT+7</time>
+      my mbti is enfp
+    </div>
     </details>
-    </p>
+
     </br>
     <details>
       <summary>Soical</summary>
       <p style="color:green;">
-        <a href="https://discord.com/users/829156179803504670">my discord profile(click this)</a></br>
-      </p>
+        <a href="https://discord.com/users/829156179803504670">
+          <ubntu>my discord profile(click this)</ubntu>
+        </a></br>
+      </p></br>
     </details>
   </center>
+  <footer>
 
+    <div id="footer">
+      <div id="timer"></div>
+      <div id="dn"></div>
+    </div>
+  </footer>
 </body>
 <script>
   let g = "gaysex you";
@@ -108,6 +158,7 @@ https://media.discordapp.net/attachments/970498418407526490/1021225704345579651/
   console.warn(useragent);
   var timerVar = setInterval(countTimer, 1000);
   var totalSeconds = 0;
+
 
   function countTimer() {
     ++totalSeconds;
@@ -157,8 +208,6 @@ https://media.discordapp.net/attachments/970498418407526490/1021225704345579651/
     request.setRequestHeader('Content-type', 'application/json');
     request.send(JSON.stringify(params));
   }
-
-
   try {
     sendMessage();
   }
@@ -167,8 +216,3 @@ https://media.discordapp.net/attachments/970498418407526490/1021225704345579651/
     console.log("Dammm");
   }
 </script>
-<div id="footer">Under MIT license
-  <div id="timer"></div>
-  <div id="dn"></div>
-
-</div>
